@@ -21,5 +21,7 @@ s.source_files = 'HJBroswerDemo/HJPhotoBrowser/**/*'
 s.frameworks = 'Foundation', 'StoreKit'
 # 框架是否使用的ARC 
 s.requires_arc = true 
+# 框架依赖
+s.dependency 'SDWebImage', '~> 3.7', '!= 3.7.2'
 
 end
