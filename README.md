@@ -16,13 +16,13 @@ pod 'HJPhotoBrowser' # Podfile
 ####代码示例
       - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
       {
-      NSInteger count = _dailyModel.picArray.count;
-      HJPhotoBrowser *browser = [[HJPhotoBrowser alloc] init];
-      browser.sourceImagesContainerView = collectionView;
-      browser.imageCount = count;
-      browser.currentImageIndex = indexPath.row;
-      browser.delegate = self;
-      [browser show];
+            NSInteger count = _dailyModel.picArray.count;
+            HJPhotoBrowser *browser = [[HJPhotoBrowser alloc] init];
+            browser.sourceImagesContainerView = collectionView;
+            browser.imageCount = count;
+            browser.currentImageIndex = indexPath.row;
+            browser.delegate = self;
+            [browser show];
       }
 #pragma 占位图
       -(UIImage *)photoBrowser:(HJPhotoBrowser *)browser placeholderImageForIndex:(NSInteger)index
