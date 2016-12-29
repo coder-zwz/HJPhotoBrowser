@@ -30,7 +30,7 @@ pod 'HJPhotoBrowser' # Podfile
             return [UIImage imageNamed:@"error_image"];
       }
       #pragma 图片的地址
-      -(NSURL *)photoBrowser:(HJPhotoBrowser *)browser highQualityImageURLForIndex:(NSInteger)index
+      -(NSURL *)photoBrowser:(HJPhotoBrowser *)browser highQualityImageURLForIndex:(NSInteger)index
       {
             return [NSURL URLWithString:_dailyModel.picArray[index]];
       }
