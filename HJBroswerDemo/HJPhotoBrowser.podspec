@@ -3,7 +3,7 @@ Pod::Spec.new do |s|
 # 名称 使用的时候pod search [name]
 s.name             = 'HJPhotoBrowser'
 # 代码库的版本
-s.version          = '1.0'
+s.version          = ‘1.0.1’
 # 简介 
 s.summary          = "一款iOS高性能图片浏览器，依赖SDWebImage，支持浏览本地图片及网络图片"
 # 主页
