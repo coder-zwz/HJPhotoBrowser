@@ -15,31 +15,30 @@ pod 'HJPhotoBrowser' # Podfile
 ![Image text](https://raw.githubusercontent.com/coder-zwz/DLPickerView/master/screenshots/Simulator Screen Shot2.png)
 ####代码示例
       - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
-{
-    NSInteger count = _dailyModel.picArray.count;
+      {
+         NSInteger count = _dailyModel.picArray.count;
     
-    HJPhotoBrowser *browser = [[HJPhotoBrowser alloc] init];
+         HJPhotoBrowser *browser = [[HJPhotoBrowser alloc] init];
     
-    browser.sourceImagesContainerView = collectionView;
+         browser.sourceImagesContainerView = collectionView;
     
-    browser.imageCount = count;
+         browser.imageCount = count;
     
-    browser.currentImageIndex = indexPath.row;
+         browser.currentImageIndex = indexPath.row;
     
-    browser.delegate = self;
+         browser.delegate = self;
     
-    [browser show];
-  
+         [browser show];
 
-}
+      }
 #pragma 占位图
--(UIImage *)photoBrowser:(HJPhotoBrowser *)browser placeholderImageForIndex:(NSInteger)index
-{
-    return [UIImage imageNamed:@"error_image"];
-}
-#pragma 图片的地址
--(NSURL *)photoBrowser:(HJPhotoBrowser *)browser highQualityImageURLForIndex:(NSInteger)index
-{
-    return [NSURL URLWithString:_dailyModel.picArray[index]];
-}
+      -(UIImage *)photoBrowser:(HJPhotoBrowser *)browser placeholderImageForIndex:(NSInteger)index
+      {
+         return [UIImage imageNamed:@"error_image"];
+      }
+      #pragma 图片的地址
+      -(NSURL *)photoBrowser:(HJPhotoBrowser *)browser highQualityImageURLForIndex:(NSInteger)index
+      {
+        return [NSURL URLWithString:_dailyModel.picArray[index]];
+      }
 
