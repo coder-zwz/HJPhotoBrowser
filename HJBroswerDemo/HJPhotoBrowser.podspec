@@ -17,7 +17,7 @@ s.source           = { :git => 'https://github.com/coder-zwz/HJPhotoBrowser.git'
 
 s.ios.deployment_target = '8.0'
 # 如果使用pod 需要导入哪些资源
-s.source_files = 'HJBroswerDemo/HJBroswerDemo/HJPhotoBrowser/**/*'
+s.source_files = 'HJBroswerDemo/HJPhotoBrowser/**/*'
 s.frameworks = 'Foundation', 'StoreKit'
 # 框架是否使用的ARC 
 s.requires_arc = true 
