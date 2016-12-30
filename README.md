@@ -41,8 +41,8 @@ pod 'HJPhotoBrowser' # Podfile
       }
   
 ```
-
-
+####代码示例
+```java 
       - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
       {
             NSInteger count = _dailyModel.picArray.count;
@@ -66,4 +66,4 @@ pod 'HJPhotoBrowser' # Podfile
       {
             return [NSURL URLWithString:_dailyModel.picArray[index]];
       }
-
+```
