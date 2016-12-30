@@ -15,8 +15,8 @@ pod 'HJPhotoBrowser' # Podfile
 ![Image text](https://raw.githubusercontent.com/coder-zwz/HJPhotoBrowser/master/HJBroswerDemo/screenshots/Simulator2.png)
 ####代码示例
 ```java  
-  
- - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
+
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
       {
             NSInteger count = _dailyModel.picArray.count;
             HJPhotoBrowser *browser = [[HJPhotoBrowser alloc] init];
@@ -31,7 +31,6 @@ pod 'HJPhotoBrowser' # Podfile
       {
             HJCollectionViewDemoCell *cell = (HJCollectionViewDemoCell *)[self collectionView:self.collectionView                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
             cellForItemAtIndexPath:[NSIndexPath indexPathForItem:index inSection:0]];
-            
             return cell.imageView.image;
       }
       #pragma 图片的地址
@@ -41,29 +40,4 @@ pod 'HJPhotoBrowser' # Podfile
       }
   
 ```
-####代码示例
-```java 
-      - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
-      {
-            NSInteger count = _dailyModel.picArray.count;
-            HJPhotoBrowser *browser = [[HJPhotoBrowser alloc] init];
-            browser.sourceImagesContainerView = collectionView;
-            browser.imageCount = count;
-            browser.currentImageIndex = indexPath.row;
-            browser.delegate = self;
-            [browser show];
-      }
-      #pragma 占位图
-      -(UIImage *)photoBrowser:(HJPhotoBrowser *)browser placeholderImageForIndex:(NSInteger)index
-      {
-            HJCollectionViewDemoCell *cell = (HJCollectionViewDemoCell *)[self collectionView:self.collectionView                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
-            cellForItemAtIndexPath:[NSIndexPath indexPathForItem:index inSection:0]];
-            
-            return cell.imageView.image;
-      }
-      #pragma 图片的地址
-      -(NSURL *)photoBrowser:(HJPhotoBrowser *)browser highQualityImageURLForIndex:(NSInteger)index
-      {
-            return [NSURL URLWithString:_dailyModel.picArray[index]];
-      }
-```
+
