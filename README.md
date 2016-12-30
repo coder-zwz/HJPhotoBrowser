@@ -27,7 +27,8 @@ pod 'HJPhotoBrowser' # Podfile
       #pragma 占位图
       -(UIImage *)photoBrowser:(HJPhotoBrowser *)browser placeholderImageForIndex:(NSInteger)index
       {
-            HJCollectionViewDemoCell *cell = (HJCollectionViewDemoCell *)[self collectionView:self.collectionView                                                                               cellForItemAtIndexPath:[NSIndexPath indexPathForItem:index inSection:0]];
+            HJCollectionViewDemoCell *cell = (HJCollectionViewDemoCell *)[self collectionView:self.collectionView                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
+            cellForItemAtIndexPath:[NSIndexPath indexPathForItem:index inSection:0]];
             
             return cell.imageView.image;
       }
