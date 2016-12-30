@@ -13,6 +13,7 @@ pod 'HJPhotoBrowser' # Podfile
 ![Image text](https://raw.githubusercontent.com/coder-zwz/HJPhotoBrowser/master/HJBroswerDemo/screenshots/Simulator1.png)
 ###图片浏览:
 ![Image text](https://raw.githubusercontent.com/coder-zwz/HJPhotoBrowser/master/HJBroswerDemo/screenshots/Simulator2.png)
+####代码示例
 ```java  
   
  - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
@@ -41,7 +42,7 @@ pod 'HJPhotoBrowser' # Podfile
   
 ```
 
-####代码示例
+
       - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
       {
             NSInteger count = _dailyModel.picArray.count;
