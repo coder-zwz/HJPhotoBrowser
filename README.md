@@ -14,7 +14,7 @@ pod 'HJPhotoBrowser' # Podfile
 ###图片浏览:
 ![Image text](https://raw.githubusercontent.com/coder-zwz/HJPhotoBrowser/master/HJBroswerDemo/screenshots/Simulator2.png)
 ####代码示例
-```java  
+```Objective-C
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
       {
