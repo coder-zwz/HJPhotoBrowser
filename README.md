@@ -27,7 +27,10 @@ pod 'HJPhotoBrowser' # Podfile
       #pragma 占位图
       -(UIImage *)photoBrowser:(HJPhotoBrowser *)browser placeholderImageForIndex:(NSInteger)index
       {
-            return [UIImage imageNamed:@"error_image"];
+           
+            // 不建议用此种方式获取小图，这里只是为了简单实现展示而已
+            HJCollectionViewDemoCell *cell = (HJCollectionViewDemoCell *)[self collectionView:self.collectionView cellForItemAtIndexPath:[NSIndexPath indexPathForItem:index inSection:0]];
+            return cell.imageView.image;
       }
       #pragma 图片的地址
       -(NSURL *)photoBrowser:(HJPhotoBrowser *)browser highQualityImageURLForIndex:(NSInteger)index
