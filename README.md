@@ -9,15 +9,15 @@ HJPhotoBrowser is available on [CocoaPods](https://cocoapods.org/). Just add the
 ```ruby
 pod 'HJPhotoBrowser' # Podfile
 ```
-###主要功能:
+### 主要功能:
 
 ![Image text](https://raw.githubusercontent.com/coder-zwz/HJPhotoBrowser/master/HJBroswerDemo/screenshots/Simulator1.png)
 
-###图片浏览:
+### 图片浏览:
 
 ![Image text](https://raw.githubusercontent.com/coder-zwz/HJPhotoBrowser/master/HJBroswerDemo/screenshots/Simulator2.png)
 
-####代码示例
+#### 代码示例
 ```Objective-C
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
